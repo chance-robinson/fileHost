@@ -14,7 +14,7 @@ function loadMarkerClusterScript() {
     var clusterGroup = L.markerClusterGroup();
 
     // Fetch your data from a URL
-    fetch("http://127.0.0.1:8000/data", {
+    fetch("https://lapd-api.onrender.com/data", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
