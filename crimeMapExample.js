@@ -93,7 +93,7 @@ var map;
 // After the scripts are loaded, you can use Leaflet and Leaflet.markercluster
 leafletScript.onload = function () {
   // Initialize your Leaflet map and use other Leaflet functionality
-  map = L.map("map").setView([34.042327, -118.259418], 10);
+  map = L.map("mapExample").setView([34.042327, -118.259418], 10);
 
   // Add a tile layer (e.g., OpenStreetMap)
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
