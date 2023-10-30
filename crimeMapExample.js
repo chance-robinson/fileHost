@@ -39,7 +39,7 @@ leafletScript.onload = function () {
 
     // Define custom icon after Leaflet is loaded
     customIcon = L.icon({
-        iconUrl: 'https://raw.githubusercontent.com/chance-robinson/fileHost/main/icons8-map-pin-48.webp',
+        iconUrl: 'https://cdn.jsdelivr.net/gh/chance-robinson/fileHost@main/icons8-map-pin-48.webp        ',
         iconSize: [48, 48],
         iconAnchor: [24, 42],
     });
@@ -48,9 +48,8 @@ leafletScript.onload = function () {
 markerClusterScript.onload = function () {
 // Create a marker cluster group
 var clusterGroup = L.markerClusterGroup();
-
 // Fetch your data from a URL
-fetch("http://127.0.0.1:8000/data", {
+fetch("https://lapd-api.onrender.com/data", {
   method: "POST",
   headers: {
     "Content-Type": "application/json",
