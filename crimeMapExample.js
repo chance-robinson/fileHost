@@ -22,12 +22,12 @@ function loadMarkerClusterScript() {
       body: JSON.stringify({
         desc: [
           {
-            label: ["BATTERY - SIMPLE ASSAULT"],
             value: ["BATTERY - SIMPLE ASSAULT"],
+            label: ["BATTERY - SIMPLE ASSAULT"],
           },
         ],
         area: [],
-        number: 90,
+        number: "90",
         startDate: "na",
         endDate: "na",
       }),
@@ -116,7 +116,7 @@ var mapElement = document.getElementById("mapExample");
 mapElement.style.minHeight = "10px";
 
 window.addEventListener("beforeunload", function () {
-        if (map) {
-          map.remove(); // Remove the map instance
-        }
-      });
+  if (map) {
+    map.remove(); // Remove the map instance
+  }
+});
