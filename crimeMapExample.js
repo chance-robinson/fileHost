@@ -114,3 +114,9 @@ leafletScript.onload = function () {
 
 var mapElement = document.getElementById("map");
 mapElement.style.minHeight = "10px";
+
+window.addEventListener("beforeunload", function () {
+  if (map) {
+    map.remove(); // Remove the map instance
+  }
+});
