@@ -39,7 +39,7 @@ leafletScript.onload = function () {
 
     // Define custom icon after Leaflet is loaded
     customIcon = L.icon({
-        iconUrl: 'https://cdn.example.com/your-cdn-path/path-to-your-icon.png',
+        iconUrl: 'https://raw.githubusercontent.com/chance-robinson/fileHost/main/icons8-map-pin-48.webp',
         iconSize: [48, 48],
         iconAnchor: [24, 42],
     });
