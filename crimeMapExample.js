@@ -112,11 +112,11 @@ leafletScript.onload = function () {
   loadMarkerClusterScript();
 };
 
-var mapElement = document.getElementById("map");
+var mapElement = document.getElementById("mapExample");
 mapElement.style.minHeight = "10px";
 
 window.addEventListener("beforeunload", function () {
-  if (map) {
-    map.remove(); // Remove the map instance
-  }
-});
+        if (map) {
+          map.remove(); // Remove the map instance
+        }
+      });
